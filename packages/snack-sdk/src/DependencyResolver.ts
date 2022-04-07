@@ -112,7 +112,7 @@ export default class DependencyResolver {
         fileName: key,
       });
       this.logger?.error(error);
-      if (this.status[key]) {
+      if (key) {
         delete this.status[key];
         this.callback(
           {
